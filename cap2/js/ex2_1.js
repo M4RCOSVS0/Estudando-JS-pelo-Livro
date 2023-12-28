@@ -1,4 +1,4 @@
-// delara a função MostrarOla
+// declara a função MostrarOla
 function mostrarOla() {
     //obtem o conteúdo do campo (com id=).value
     var nome = document.getElementById("nome").value
