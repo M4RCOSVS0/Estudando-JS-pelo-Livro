@@ -22,6 +22,10 @@ function calcularMedia(){
         //altera o texto e o estilo da cor do elemento outSituação
         outSituacao.textContent = `Parabéns ${nome}! Você foi aprovado(a)`
         outSituacao.style.color = "blue";
+    }else if(media >= 4){
+        outSituacao.textContent = `Atenção  ${nome}! Você está de recuperação!`
+        outSituacao.style.color = "green";
+    
     }else{
         outSituacao.textContent = `Ops ${nome} Você foi reprovado(a)`
         outSituacao.style.color = "red";
