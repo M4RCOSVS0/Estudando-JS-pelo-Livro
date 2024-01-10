@@ -23,7 +23,7 @@ function apostarNumero(){
     var outDica = document.getElementById("outDica")
     var outErros = document.getElementById("outErros")
     var outChances = document.getElementById("outChances")
-
+    
     //se aposta do jogador for igual ao número sorteado
     if(numero == sorteado){
         alert("Parabéns!! Você acertou!!!")
@@ -62,9 +62,9 @@ var btApostar = document.getElementById("btApostar")
 btApostar.addEventListener("click", apostarNumero)
 function jogarNovamente() {
     location.reload();    // recarrega a página
-  }
-  var btJogar = document.getElementById("btJogar");
-  btJogar.addEventListener("click", jogarNovamente);
+}
+var btJogar = document.getElementById("btJogar");
+btJogar.addEventListener("click", jogarNovamente);
   
 
   

@@ -56,16 +56,20 @@ var btUrgencia = document.getElementById("btUrgencia")
 btUrgencia.addEventListener("click", acionarUrgencia)
 
 function atenderPaciente(){
-    //verifica se o vetor pacientes está vazio
-    if(pacientes.length == 0){
-        alert("Não há pacienttes na lista de espera")
-        inPaciente.focus()
-        return
-    }
-    //cria referência aos ekementos de saída de dados
+    //cria referência aos elementos de saída de dados
     var outAtendimento = document.getElementById("outAtendimento")
     var outLista = document.getElementById("outLista")
+    var inPaciente = document.getElementById("inPaciente")
+    var outLista = document.getElementById("outLista")
 
+    //verifica se o vetor pacientes está vazio
+    if(pacientes.length == 0){
+        alert("Não há pacientes na lista de espera")
+        inPaciente.focus()
+        outAtendimento.textContent = ''
+        return
+    }
+    
     //remove paciente do início da fila (e obtém nome)
     var atender = pacientes.shift()
 
