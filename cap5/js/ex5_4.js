@@ -34,4 +34,7 @@ function listarCriancas() {
         lista += criancas[i].nome + " - " 
     }
 
+    for (let i = 0; i < criancas.length; i++) {
+        lis
+    }
 
