@@ -3,6 +3,7 @@ function adicionarPaciente(){
     //cria referência aos elementos de entrada e saída de dados da página
     var inPaciente = document.getElementById("inPaciente")
     var outLista = document.getElementById("outLista")
+
     var nome = inPaciente.value //obtém o nome do paciente
 
     //verifica o nome do paciente
@@ -11,6 +12,7 @@ function adicionarPaciente(){
         inPaciente.focus()
         return;
     }
+
     pacientes.push(nome)    //adiciona o nome no final do vetor
     var lista = ""  //string para concatenar pacientes
 
@@ -33,6 +35,7 @@ btAdicionar.addEventListener("click", adicionarPaciente)
 function acionarUrgencia(){
     var inPaciente = document.getElementById("inPaciente")
     var outLista = document.getElementById("outLista")
+
     var nome = inPaciente.value 
 
     if(nome == ""){
@@ -60,7 +63,6 @@ function atenderPaciente(){
     var outAtendimento = document.getElementById("outAtendimento")
     var outLista = document.getElementById("outLista")
     var inPaciente = document.getElementById("inPaciente")
-    var outLista = document.getElementById("outLista")
 
     //verifica se o vetor pacientes está vazio
     if(pacientes.length == 0){
